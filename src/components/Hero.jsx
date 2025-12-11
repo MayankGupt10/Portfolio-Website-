@@ -1,0 +1,198 @@
+import React, { useEffect, useState } from "react";
+import "./Hero.css";
+
+function Hero() {
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [text, setText] = useState("");
+  const fullText = "Turning Data Into Actionable Insights";
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    if (index < fullText.length) {
+      const timeout = setTimeout(() => {
+        setText((prev) => prev + fullText[index]);
+        setIndex(index + 1);
+      }, 60);
+      return () => clearTimeout(timeout);
+    }
+  }, [index]);
+
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      setMousePosition({
+        x: (e.clientX / window.innerWidth) * 100,
+        y: (e.clientY / window.innerHeight) * 100,
+      });
+    };
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => window.removeEventListener("mousemove", handleMouseMove);
+  }, []);
+
+  const avatarImage = require("../assets/avatar.jpg");
+
+  return (
+    <section id="home" className="hero-redesign">
+      {/* Glow Effect */}
+      <div
+        className="hero-glow-effect"
+        style={{
+          background: `radial-gradient(600px circle at ${mousePosition.x}% ${mousePosition.y}%, rgba(0, 102, 255, 0.15), transparent 40%)`,
+        }}
+      />
+
+      <div className="hero-container-new">
+        {/* Left Side - Content */}
+        <div className="hero-content-left">
+          <div className="hero-label">
+            <span className="status-dot"></span>
+            Available for Internship & Full-Time Opportunities
+          </div>
+
+          <h1 className="hero-name">
+            I'm <span className="name-highlight">Mayank Gupta</span>
+          </h1>
+
+          <div className="hero-role">
+            <div className="role-line"></div>
+            <span className="role-text">{text}</span>
+            <span className="typing-cursor">|</span>
+          </div>
+
+          <p className="hero-bio">
+            Data Science Enthusiast & Aspiring Data Analyst crafting intelligent
+            solutions with Python, Machine Learning, Power BI, and Cloud
+            Technologies. Transforming complex data into meaningful insights.
+          </p>
+
+          <div className="hero-metrics">
+            <div className="metric-box">
+              <span className="metric-value">5+</span>
+              <span className="metric-label">Projects</span>
+            </div>
+            <div className="metric-box">
+              <span className="metric-value">5+</span>
+              <span className="metric-label">Certifications</span>
+            </div>
+            <div className="metric-box">
+              <span className="metric-value">260+</span>
+              <span className="metric-label">Problems Solved</span>
+            </div>
+          </div>
+
+          <div className="hero-actions">
+            <a href="#projects" className="hero-btn primary-btn">
+              <span>View My Work</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M5 12h14M12 5l7 7-7 7"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </a>
+            <a href="#contact" className="hero-btn secondary-btn">
+              <span>Let's Connect</span>
+            </a>
+          </div>
+        </div>
+
+        {/* Right Side - Image */}
+        <div className="hero-image-section">
+          <div className="image-wrapper">
+            <div className="image-border"></div>
+            <img src={avatarImage} alt="Mayank Gupta" className="hero-avatar" />
+
+            {/* Floating Tech Badges */}
+            <div className="tech-badge badge-1">
+              <svg
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                width="20"
+                height="20"
+              >
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" />
+              </svg>
+              <span>Python</span>
+            </div>
+            <div className="tech-badge badge-2">
+              <svg
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                width="20"
+                height="20"
+              >
+                <path d="M3 3h18v18H3V3zm16 16V5H5v14h14z" />
+              </svg>
+              <span>Power BI</span>
+            </div>
+            <div className="tech-badge badge-3">
+              <svg
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                width="20"
+                height="20"
+              >
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+              </svg>
+              <span>ML/AI</span>
+            </div>
+            <div className="tech-badge badge-4">
+              <svg
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                width="20"
+                height="20"
+              >
+                <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V6h16v12z" />
+              </svg>
+              <span>Excel</span>
+            </div>
+            <div className="tech-badge badge-5">
+              <svg
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                width="20"
+                height="20"
+              >
+                <circle cx="12" cy="12" r="3" />
+                <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z" />
+              </svg>
+              <span>AWS</span>
+            </div>
+            <div className="tech-badge badge-6">
+              <svg
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                width="20"
+                height="20"
+              >
+                <path d="M2 2h20v20H2z" />
+              </svg>
+              <span>Tableau</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Animated Particles */}
+      <div className="hero-particles-bg">
+        {[...Array(15)].map((_, i) => (
+          <div
+            key={i}
+            className="particle-dot"
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+              animationDelay: `${Math.random() * 5}s`,
+              animationDuration: `${3 + Math.random() * 3}s`,
+            }}
+          />
+        ))}
+      </div>
+    </section>
+  );
+}
+
+export default Hero;
