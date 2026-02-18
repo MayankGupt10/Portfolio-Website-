@@ -1,26 +1,22 @@
-# 🚀 Amit's Modern React Portfolio
+# 🚀 Mayank's Modern React Portfolio
 
 A professional, fully redesigned, **neon + glassmorphism React.js portfolio**, featuring animated components, light/dark mode, custom cursor, certifications, projects, and a premium UI/UX suitable for developers and hiring managers.
 
 ---
 
 ## 🌐 Live Portfolio  
-🔗 **https://amit-portfolio11.onrender.com**
+🔗 **https://mayanks-portfolio-d5sw.onrender.com/**
 
 ---
 
 ## 👨‍💻 Author  
-**Amit**  
-Full Stack Developer | Data Science Enthusiast | AI Explorer  
-- 🔗 GitHub: https://github.com/Amit046  
-- 🔗 LinkedIn: https://www.linkedin.com/in/-amit  
+**Mayank**  
+Data Science Enthusiast | AI Explorer  
+- 🔗 GitHub: https://github.com/MayankGupt10 
+- 🔗 LinkedIn: www.linkedin.com/in/mayank8 
 
 ---
 
-# 📸 Preview  
-*(Add screenshots here if needed)*
-
----
 
 # ✨ Features
 
@@ -205,19 +201,13 @@ vercel
 ### ▶ Netlify  
 Drag & drop `/build` folder
 
-### ▶ GitHub Pages  
-Add to package.json:
-```json
-"homepage": "https://Amit046.github.io/amit-portfolio"
-```
 
----
 
 # 💬 Contact
 
 📧 Email: (add your email here)  
-🌐 LinkedIn: https://www.linkedin.com/in/-amit  
-🧑‍💻 GitHub: https://github.com/Amit046  
+🌐 LinkedIn: www.linkedin.com/in/mayank8 
+🧑‍💻 GitHub: https://github.com/MayankGupt10 
 
 ---
 
