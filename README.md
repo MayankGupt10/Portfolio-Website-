@@ -10,7 +10,7 @@ A professional, fully redesigned, **neon + glassmorphism React.js portfolio**, f
 ---
 
 ## 👨‍💻 Author  
-**Mayank**  
+**Mayank Gupta**  
 Data Science Enthusiast | AI Explorer  
 - 🔗 GitHub: https://github.com/MayankGupt10 
 - 🔗 LinkedIn: www.linkedin.com/in/mayank8 
@@ -42,10 +42,10 @@ Data Science Enthusiast | AI Explorer
 - Skills with glowing progress bars  
 - Certifications with badges & Google Drive links  
 - Contact form with email links  
-- Footer with social icons  
+- Footer with social icons
 
 ### 💾 Data Persistence  
-- Theme saved using **localStorage**  
+- Theme saved using **localStorage**
 
 ---
 
