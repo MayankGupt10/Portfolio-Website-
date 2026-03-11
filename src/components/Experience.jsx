@@ -30,6 +30,30 @@ function Experience() {
     {
       id: 1,
       type: "Internship",
+      company: "Innovexis",
+      role: "Data Science / AI-ML Engineer Intern",
+      duration: "February 2026 - Present",
+      location: "India - Remote",
+      icon: "🤖",
+      responsibilities: [
+        "Analyzing large-scale real-world datasets to extract meaningful insights and business intelligence",
+    "Building and training Machine Learning and AI models for prediction, classification, and data-driven decision making",
+    "Performing data preprocessing, feature engineering, and exploratory data analysis (EDA) on complex datasets",
+    "Deploying trained ML models and evaluating their performance using appropriate metrics",
+    "Preparing comprehensive analytical reports and visualizations to communicate insights and model results",
+      ],
+      technologies: [
+        "Python",
+        "Machine Learning",
+        "Data Analysis",
+        "Scikit-Learn",
+        "Model Building",
+        "Data Visualization",
+      ],
+    },
+    {
+      id: 2,
+      type: "Internship",
       company: "InAmigos Foundation (IAF)",
       role: "Human Resource Intern",
       duration: "July 2025 - Present (6 months)",
@@ -48,7 +72,7 @@ function Experience() {
       ],
     },
     {
-      id: 2,
+      id: 3,
       type: "Internship",
       company: "InAmigos Foundation (IAF)",
       role: "Content Writing Intern",
@@ -68,7 +92,7 @@ function Experience() {
       ],
     },
     {
-      id: 3,
+      id: 4,
       type: "Internship",
       company: "Skill Craft Technologies",
       role: "Data Science Intern",
@@ -90,7 +114,7 @@ function Experience() {
       ],
     },
     {
-      id: 4,
+      id: 5,
       type: "Training",
       company: "Code Quest Bootcamp",
       role: "DSA Summer Bootcamp - From Basics to Brilliance",

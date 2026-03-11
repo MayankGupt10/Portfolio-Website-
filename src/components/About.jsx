@@ -91,7 +91,7 @@ function About() {
               <div className="stat-item-new">
                 <div className="stat-icon">💼</div>
                 <div className="stat-content">
-                  <span className="stat-num">5+</span>
+                  <span className="stat-num">4+</span>
                   <span className="stat-text">Projects</span>
                 </div>
               </div>
@@ -112,7 +112,7 @@ function About() {
               <div className="stat-item-new">
                 <div className="stat-icon">💻</div>
                 <div className="stat-content">
-                  <span className="stat-num">260+</span>
+                  <span className="stat-num">290+</span>
                   <span className="stat-text">Problems</span>
                 </div>
               </div>
@@ -127,7 +127,7 @@ function About() {
                 <span className="edu-year">2023 – 2027</span>
                 <div className="edu-gpa">
                   <span>CGPA</span>
-                  <strong>8.2/10</strong>
+                  <strong>8.5/10</strong>
                 </div>
               </div>
             </div>

@@ -29,6 +29,24 @@ function Projects() {
 
   const projects = [
     {
+      title: "Meteo-Predict: ML-Based Weather Prediction System",
+      period: "January 2026",
+      description:
+        "Developed a machine learning-based weather prediction system that utilizes real-time weather APIs and historical climate data to forecast weather conditions. The system performs data preprocessing, feature engineering, and predictive modeling to generate accurate weather insights.",
+      tech: ["Python", "Machine Learning", "Pandas", "NumPy", "Scikit-Learn", "Weather API", "Data Visualization"],
+      icon: "🌦️",
+      link: "https://github.com/MayankGupt10/MeteoPredictor-Project-ML",
+      highlights: [
+       "Integrated real-time weather data using external APIs",
+    "Performed data cleaning, preprocessing, and feature engineering",
+    "Built machine learning models for weather prediction and trend analysis",
+    "Visualized weather patterns and prediction outputs using interactive charts",
+    "End-to-end ML pipeline: data collection → preprocessing → model training → prediction",
+    "Provides predictive insights for temperature and weather conditions"
+      ],
+      color: "#00A8E8",
+    },
+    {
       title: "Real-Time Process Monitoring Dashboard",
       period: "July 2025",
       description:
@@ -54,9 +72,13 @@ function Projects() {
       icon: "🤖",
       link: "https://github.com/MayankGupt10/Startup-Vision",
       highlights: [
-        "AI-powered validation",
-        "Market data analysis",
-        "Risk assessment",
+         "AI-powered chatbot that analyzes startup ideas and provides feasibility insights",
+    "Uses intelligent prompts and AI models to evaluate market demand and competition",
+    "Generates structured feedback including strengths, weaknesses, and improvement suggestions",
+    "Simulates investor-style evaluation for early-stage startup concepts",
+    "Provides risk assessment and market opportunity analysis",
+    "Interactive and responsive UI for real-time idea validation",
+    "Helps founders refine ideas before building the actual product"
       ],
       color: "#00BFFF",
     },

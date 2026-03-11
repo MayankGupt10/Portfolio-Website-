@@ -66,7 +66,7 @@ function Hero() {
 
           <div className="hero-metrics">
             <div className="metric-box">
-              <span className="metric-value">5+</span>
+              <span className="metric-value">4+</span>
               <span className="metric-label">Projects</span>
             </div>
             <div className="metric-box">
@@ -74,7 +74,7 @@ function Hero() {
               <span className="metric-label">Certifications</span>
             </div>
             <div className="metric-box">
-              <span className="metric-value">260+</span>
+              <span className="metric-value">290+</span>
               <span className="metric-label">Problems Solved</span>
             </div>
           </div>

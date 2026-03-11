@@ -9,9 +9,11 @@ import Certifications from "./components/Certifications";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Animations from "./components/Animations";
+import GreetingScreen from "./components/GreetingScreen";
 import "./styles.css";
 
 function App() {
+  const [showGreeting, setShowGreeting] = useState(true);
   const [darkMode, setDarkMode] = useState(() => {
     const saved = localStorage.getItem("darkMode");
     return saved !== null ? JSON.parse(saved) : true;
@@ -19,7 +21,6 @@ function App() {
   const [scrollProgress, setScrollProgress] = useState(0);
 
   useEffect(() => {
-    // Update body class and save to localStorage
     if (darkMode) {
       document.body.classList.add("dark-mode");
       document.body.classList.remove("light-mode");
@@ -43,10 +44,12 @@ function App() {
 
   return (
     <div className="App">
-      {/* All animations in one component */}
+      {showGreeting && (
+        <GreetingScreen onComplete={() => setShowGreeting(false)} />
+      )}
+
       <Animations />
 
-      {/* Background Animation */}
       <div className="background-animation">
         <div className="floating-shapes">
           <div className="shape shape-1"></div>
