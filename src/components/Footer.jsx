@@ -21,6 +21,7 @@ function Footer() {
             </h3>
             <p className="footer-tagline">
               Transforming data into actionable insights through analytics and
+
               machine learning.
             </p>
           </div>

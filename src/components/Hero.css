@@ -611,3 +611,72 @@ body.light-mode .particle-dot {
   background: #0066FF;
   box-shadow: 0 0 10px #0066FF;
 }
+
+
+
+
+
+/* ===== ADD THIS TO YOUR Hero.css ===== */
+
+/* CV Button */
+.cv-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background: transparent;
+  border: 1.5px solid rgba(0, 102, 255, 0.5);
+  color: #a0b4d6;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.cv-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 102, 255, 0.08),
+    rgba(0, 102, 255, 0.02)
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.cv-btn:hover {
+  border-color: rgba(0, 102, 255, 0.9);
+  color: #ffffff;
+  box-shadow: 0 0 18px rgba(0, 102, 255, 0.3),
+              inset 0 0 12px rgba(0, 102, 255, 0.08);
+  transform: translateY(-2px);
+}
+
+.cv-btn:hover::before {
+  opacity: 1;
+}
+
+/* Hand gesture animation */
+.cv-hand {
+  display: inline-block;
+  font-size: 1rem;
+  animation: pointUp 1.5s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
+@keyframes pointUp {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-5px); }
+}
+
+.cv-btn:hover .cv-hand {
+  animation: none;
+  transform: translateY(-4px) scale(1.2);
+  transition: transform 0.2s ease;
+}

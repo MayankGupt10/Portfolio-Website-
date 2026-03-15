@@ -17,6 +17,7 @@ function Skills() {
         { name: "MySQL", level: 80 },
         { name: "Core Java", level: 75 },
       ],
+
     },
     {
       category: "Data Science",
@@ -51,6 +52,17 @@ function Skills() {
         { name: "MongoDB", level: 75 },
       ],
     },
+    {
+  category: "Soft Skills",
+  icon: "🌟",
+  color: "#00CFFF",
+  skills: [
+    { name: "Problem Solving", level: 90 },
+    { name: "Teamwork", level: 85 },
+    { name: "Adaptability", level: 88 },
+    { name: "Attention to Detail", level: 92 },
+  ],
+},
   ];
 
   const competencies = [

@@ -127,7 +127,7 @@ function About() {
                 <span className="edu-year">2023 – 2027</span>
                 <div className="edu-gpa">
                   <span>CGPA</span>
-                  <strong>8.5/10</strong>
+                  <strong>8.2/10</strong>
                 </div>
               </div>
             </div>
